@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.content{
+    height: 700px;
+    width: 450px;
+    background-color: cyan;
+    position: relative;
+    border-radius: 20px;
+}
+.overlay{
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 680px;
+    width: 430px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: white;
+    transition: opacity 0.3s ease;
+
+}
+.content:hover .overlay{
+    opacity: 5 ;
+}
